@@ -289,7 +289,7 @@ var divide = function(x, y) {
   return 0;
 };
 
-console.log(divide(-275, -582));
+// console.log(divide(-275, -582));
 
 // 14. Find the greatest common divisor (gcd) of two positive numbers. The GCD of two
 // integers is the greatest integer that divides both x and y with no remainder.
@@ -322,12 +322,9 @@ var gcd = function(x, y) {
 // compareStr('house', 'houses') // false
 // compareStr('tomato', 'tomato') // true
 var compareStr = function(str1, str2) {
-  if (str1.length !== str2.length) {
-    return false;
-  }
 
-  if (str1.length === 1) {
-    return str1[0] === str2[0];
+  if (str1.length === 0 && str2.length === 0) {
+    return true;
   }
 
   if (str1[0] === str2[0]) {
@@ -337,7 +334,7 @@ var compareStr = function(str1, str2) {
   }
 };
 
-// console.log(compareStr('house', 'hosue'));
+console.log(compareStr('house', 'houses'));
 
 // 16. Write a function that accepts a string and creates an array where each letter
 // occupies an index of the array.
